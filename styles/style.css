@@ -9,8 +9,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 80px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  margin: 0 auto;
   background: #222;
   padding: 20px;
   border-radius: 12px;
@@ -57,3 +58,22 @@ body {
 .equal{
   grid-column: span 2;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .display {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .container button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
