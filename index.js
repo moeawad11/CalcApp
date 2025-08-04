@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         default:
           if ("0123456789.".includes(btn)) {
             if (clear) {
-              clearExpression("default");
+              num2="";
               clear = false;
             }
             if (!operator) {
